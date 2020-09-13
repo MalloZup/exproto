@@ -5,8 +5,8 @@ import (
 	"log"
 	"net"
 
+	pb "github.com/exproto/pkg/proto/exec"
 	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )
 
 const (

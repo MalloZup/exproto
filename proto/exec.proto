@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package exec;
+
+
+//option go_package = "github.com/exproto/pkg/exec";
+
+service Exec {
+  rpc ExecCmd (CmdIn) returns (CmdOut) {}
+}
+
+message CmdIn {
+  string name = 1;
+  int32 id = 2;  // Unique ID number 
+  string output = 3;
+}
+
+message CmdOut {
+  string name = 1;
+  int32 id = 2;  // Unique ID number 
+  string output = 3;
+}
+
